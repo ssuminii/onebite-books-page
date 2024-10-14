@@ -1,5 +1,7 @@
 // CSS Module
+import { ReactNode } from 'react'
 import style from './index.module.css'
+import SearchableLayout from '@/components/searchable-layout'
 
 export default function Home() {
   return (
@@ -8,4 +10,8 @@ export default function Home() {
       <h2 className={style.h2}>Index</h2>
     </>
   )
+}
+
+Home.getLayout = (page: ReactNode) => {
+  return <SearchableLayout>{page}</SearchableLayout>
 }
