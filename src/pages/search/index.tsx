@@ -4,6 +4,7 @@ import BookItem from '@/components/book-item'
 import fetchBooks from '@/lib/fetch-books'
 import { BookData } from '@/types'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 // SSG방식으로는 query를 불러올 수 없음
 // export const getStaticProps = async (context: GetStaticPaths) => {
