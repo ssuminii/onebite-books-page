@@ -1,4 +1,4 @@
-import { GetStaticPropsContext, InferGetServerSidePropsType, InferGetStaticPropsType } from 'next'
+import { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import style from './[id].module.css'
 import fetchOneBook from '@/lib/fetch-one-book'
 
